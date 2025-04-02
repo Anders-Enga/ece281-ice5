@@ -108,11 +108,11 @@ begin
   
 	-- Output logic
 	with f_Q select
-    o_floor <= "0001" when s_floor1,
-            "0010" when s_floor2,
-            "0011" when s_floor3,
-            "0100" when s_floor4,
-            "0010" when others; -- default is floor2
+    o_floor <= x"1" when s_floor1,
+            x"2" when s_floor2,
+            x"3" when s_floor3,
+            x"4" when s_floor4,
+            x"2" when others; -- default is floor2
 
 
 	-------------------------------------------------------------------------------------------------------
